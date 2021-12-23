@@ -1,5 +1,5 @@
 # MSCI-tutorials
-Code for tutorials conducted in MSCI 641 (Text Analytics) @ Uwaterloo
+Code for tutorials conducted in MSCI 598 (Deep Learning for NLP) @ Uwaterloo
 
 **Note**: Video recordings of the tutorial sessions are posted on Learn.
 
