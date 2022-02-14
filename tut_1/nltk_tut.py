@@ -2,7 +2,7 @@
 This module contains basic utilities to tokenize text using nltk
 """
 
-from nltk.corpus import stopwords
+#from nltk.corpus import stopwords
 from nltk.tokenize import sent_tokenize, word_tokenize
 
 
@@ -10,7 +10,7 @@ def main():
     """
     tokenizes a sample dataset and removes stopwords
     """
-    data = "All work and no play makes jack dull boy. All work and no play makes jack a dull boy."
+
     stop_words = stopwords.words('english')
     words = word_tokenize(data)
     data_set_stopwords = []

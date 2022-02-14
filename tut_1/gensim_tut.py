@@ -1,6 +1,6 @@
 """
 This module includes basic utilities to train a word2vec model using gensim
-"""
+
 import os
 import sys
 from py_tut import read_dataset
@@ -22,3 +22,4 @@ def main(data_path):
 
 if __name__ == '__main__':
     main(sys.argv[1])
+"""

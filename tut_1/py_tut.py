@@ -10,6 +10,12 @@ import json
 import random
 from tqdm import tqdm
 from pprint import pprint
+import re
+import nltk
+nltk.download('punkt')
+from nltk.corpus import stopwords
+from nltk.tokenize import sent_tokenize, word_tokenize
+
 
 
 def read_dataset(data_path):
@@ -18,11 +24,33 @@ def read_dataset(data_path):
     """
     # os.path can be used for seamless path construction across different
     # operating systems.
+    with open(os.path.join(data_path, 'stopwords.txt')) as f:
+        stop_words = f.readlines()
     with open(os.path.join(data_path, 'pos.txt')) as f:
         pos_lines = f.readlines()
     with open(os.path.join(data_path, 'neg.txt')) as f:
         neg_lines = f.readlines()
     all_lines = pos_lines + neg_lines
+
+    #Remove the stopwords
+    #stop_words = stopwords.words('english')
+    words = []
+
+    for line in all_lines:
+        x = re.sub("""[!"#$%&()*+/:;<=>@[\\]^`{|}~\t\n]""", "", str(line))
+        y = x.strip()
+        z = y.split()
+        words.append(z)
+
+
+    data_set_stopwords = []
+    filtered_words = []
+    for w in words:
+        if w in stop_words:
+            data_set_stopwords.append(w)
+            continue
+        filtered_words.append(w)
+
     return list(zip(all_lines, [1]*len(pos_lines) + [0]*len(neg_lines)))
 
 
