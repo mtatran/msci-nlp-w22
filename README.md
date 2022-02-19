@@ -9,7 +9,7 @@ MSCI 598 (Deep Learning for NLP) @ Uwaterloo
 - [Assignment 2]:
   - *Driver script*: `python3 a2/main.py data/processed`.This script trains a simple MNB classifier and saves the requrired files inside `a2` folder. To get the tokens with no stopwords, replace all_lines with filtered_words in py_tut, line 54.
   - *Interface script*: `python3 a2/inference.py a2 [model_code]`. Here, `model_code` is the type of MNB classifier we need to use.This script predicts a label for all the sentences in the sample text file.
- - [Assignment 3]:
+- [Assignment 3]:
   - *Driver script*: `python3 a1/main.py sentiment`.It will generate the training split as well generate labels.
   - *Interface script* `python3 tut_1/inference.py [sample_text_file_path]`
 
