@@ -12,6 +12,8 @@ MSCI 598 (Deep Learning for NLP) @ Uwaterloo
 - [Assignment 3]:
   - *Driver script*: `python3 a1/main.py sentiment`.It will generate the training split as well generate labels.
   - *Interface script* `python3 tut_1/inference.py [sample_text_file_path]`
+- [Assignment 4]:
+  - This is ran on google collab. The output files will be shown after running the code. 
 
 # Credits and feedback
 These assignment have been supported by [Gaurav Sahu (MMath, UWaterloo)](github.com/demfier). 
