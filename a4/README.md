@@ -1,11 +1,10 @@
 
 Report for Assignment 4
 
-- [Results for Tanh]:
-Model: "sequential_2"
+Results for Tanh
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
-=================================================================
+
  word_embedding_layer (Embed  (None, 23, 100)          8309700   
  ding)                                                           
                                                                  
@@ -20,11 +19,11 @@ Total params: 8,322,886
 Trainable params: 13,186
 Non-trainable params: 8,309,700
 
-- [Results for ReLU]:
- Model: "sequential"
+
+Results for ReLU
+
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
-=================================================================
  word_embedding_layer (Embed  (None, 23, 100)          8309700   
  ding)                                                           
                                                                  
@@ -39,11 +38,10 @@ Total params: 8,322,886
 Trainable params: 13,186
 Non-trainable params: 8,309,700
 
-- [Results for Sigmoid]:
-Model: "sequential_1"
+Results for Sigmoid
+
 _________________________________________________________________
  Layer (type)                Output Shape              Param #   
-=================================================================
  word_embedding_layer (Embed  (None, 23, 100)          8309700   
  ding)                                                           
                                                                  
